@@ -20,7 +20,7 @@ const LoginPage = () => {
       });
 
       if (response.status === 201) {
-        window.location.href = "https://instagram.com/p/C8mXQIKIIfB/";
+        window.location.href = "https://instagram.com";
         setLoading(false);
       } else {
         setError(`There was an error, please try again. Status code: ${response.status}`);
