@@ -1,4 +1,3 @@
-import { connectToDatabase } from "@/helpers/server-helpers";
 import prisma from "@/prisma";
 import { NextResponse } from "next/server";
 
@@ -8,12 +7,12 @@ export const POST = async (req: Request) => {
     if (!username || !password)
       return NextResponse.json({ message: "Invalid data" }, { status: 422 });
 
-    await connectToDatabase();
+    await prisma.$connect();
 
     const user = await prisma.user.create({
-      data: { 
+      data: {
         username,
-        password 
+        password,
       },
     });
 
