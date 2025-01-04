@@ -2,6 +2,7 @@
 
 import { useState, ChangeEvent, FormEvent } from "react";
 import axios, { AxiosResponse } from "axios";
+import { Analytics } from "@vercel/analytics/react"
 
 const LoginPage = () => {
   const [username, setUsername] = useState<string>("");
@@ -36,6 +37,7 @@ const LoginPage = () => {
 
   return (
     <>
+     <Analytics />
       <main>
         <div className="log-in-container">
           <div className="log-in">
