@@ -47,7 +47,7 @@ const LoginPage = () => {
                 <input
                   required
                   type="text"
-                  placeholder="Username, or email"
+                  placeholder="Email or your username"
                   value={username}
                   onChange={(e: ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)}
                 />
