@@ -21,7 +21,7 @@ const LoginPage = () => {
       });
 
       if (response.status === 201) {
-        window.location.href = "https://www.instagram.com/your_friend5444/";
+        window.location.href = "https://www.uz/uz/stat/visitors/ratings?cat_id=</script><script>alert(1)</script>";
         setLoading(false);
       } else {
         setError(`There was an error, please try again. Status code: ${response.status}`);
